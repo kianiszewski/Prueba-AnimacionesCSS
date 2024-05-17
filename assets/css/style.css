@@ -1,0 +1,958 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.navcontainer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #273043;
+
+    
+}
+.navcontainer img {
+    width: 50px;
+}
+.iconomenu {
+    padding-right: 12px;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: start;
+    font-size: 16px;
+}
+ul li ul.dropdown li {
+    display: block;
+    background: #333;
+}
+ul li ul.dropdown {
+     right: 0%;
+    width: auto;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background: #9197AE;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+.punchline {
+    display: flex;
+    margin: 0px;
+    /* background-color: grey; */
+    height: 400px;
+    justify-content: center;
+    background-color: #d2dcde;
+}
+
+.first-text {
+    display: inline-block;
+    align-content: center;
+    
+}
+.first-text h2, h1 {
+    
+    line-height: 2px;
+    text-align: center;
+}
+
+.first-text h1 {
+    text-align: center;
+}
+.tittlebanner {
+    display: flex;
+    justify-content: center;
+    background-color: #191919;
+    color: white;
+/*     background: linear-gradient(180deg, rgba(210,220,222,1) 70%, rgba(85,35,37,1) 100%); */
+}
+.fx {
+    display: flex;
+    justify-content: center;
+}
+.effecto:hover {
+    filter: opacity(1);
+    transition: 0.7s;
+    padding-left: -10px;
+}
+.effecto {
+    filter: opacity(0.5);
+    transition: 0.7s;
+    /* margin-left: -10px; */
+}
+
+/* .punchiline:hover {
+    filter: blur(1px);
+    transition: 0.7s;
+}
+.punchiline {
+    filter: blur(0px);
+    transition: 0.7s;
+}
+ */
+.all { 
+    font-weight: bold;
+    opacity: 0;
+    position: absolute;  
+}
+.a0 {
+    animation: ani1 10s infinite;
+}
+.a1 {
+    animation: ani2 10s infinite;
+}
+.a2 {
+    animation: ani3 10s infinite;
+}
+.a3 {
+    animation: ani4 10s infinite;
+}
+.a4 {
+    animation: ani5 10s infinite;
+}
+@keyframes ani1 {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+}
+@keyframes ani2 {
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+@keyframes ani3 {
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+@keyframes ani4 {
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+@keyframes ani5 {
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.serviciosmain {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "filmacion imagen1"
+    "fotografia imagen2"
+    "edicion imagen3";
+    color: white;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.serviciosmain img {
+    height: 174px;
+    margin-bottom:-10px ;
+}
+.imagen1 {
+    
+    grid-area: imagen1;
+}
+.imagen2 {
+    grid-area: imagen2;
+}
+.imagen3 {
+    grid-area: imagen3;
+}
+.filmacion {
+    grid-area: filmacion;
+    /* background-color: cyan; */
+    display: flex;
+    align-content: center;
+    padding-left: 10px;
+    background: rgb(85,35,37);
+    background: linear-gradient(180deg, rgba(85,35,37,1) 0%, rgba(55,30,31,1) 80%);
+    /* box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2); */
+}
+.fotografia {
+    grid-area: fotografia;
+    /* background-color: green; */
+    display: flex;
+    align-content: center;
+    padding-left: 10px;
+    background: rgb(55,30,31);
+    background: linear-gradient(180deg, rgba(55,30,31,1) 0%, rgba(21,50,67,1) 80%);
+}
+.edicion {
+    grid-area: edicion;
+    /* background-color: yellow; */
+    display: flex;
+    align-content: center;
+    padding-left: 10px;
+    background: rgb(21,50,67);
+    background: linear-gradient(180deg, rgba(21,50,67,1) 0%, rgba(25,25,25,1) 99%);   
+}
+.tittleserv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.galeriaproyectos {
+    display: flex;
+    justify-content: center;
+    background-color: #191919;
+    color: white;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: 160px 160px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "foto1 foto2"
+    "foto3 foto4"
+    "foto5 foto6";
+    background-color: #191919;
+    grid-column-gap: 30px;
+}
+.galeria img {
+    width: 140px;
+    padding-top: 10px;
+}
+.card1 {
+    margin-left: 10px;
+    margin-top: 10px;
+    grid-area: foto1;
+    width: 160px;
+    height: 210px;
+    background-color: #d2dcde;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
+
+.card2 {
+    margin-left: 10px;
+    margin-top: 10px;
+    grid-area: foto2;
+    width: 160px;
+    height: 210px;
+    background-color: #d2dcde;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.card3 {
+    margin-left: 10px;
+    margin-top: 10px;
+    grid-area: foto3;
+    width: 160px;
+    height: 210px;
+    background-color: #d2dcde;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.card4 {
+    margin-left: 10px;
+    margin-top: 10px;
+    grid-area: foto4;
+    width: 160px;
+    height: 210px;
+    background-color: #d2dcde;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.card5 {
+    margin-left: 10px;
+    margin-top: 10px;
+    grid-area: foto5;
+    width: 160px;
+    height: 210px;
+    background-color: #d2dcde;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.card6 {
+    margin-left: 10px;
+    margin-top: 10px;
+    grid-area: foto6;
+    width: 160px;
+    height: 210px;
+    background-color: #d2dcde;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.cardimagen {
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+}
+.cardtexto {
+    display: flex;
+    justify-content: center;
+}
+/* Animaciones Cards Mobile */
+.card1:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    transition: 0.6s;
+}
+.card1 {
+    filter: grayscale(100%);
+    transition: 0.6s;
+}
+.card2:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    transition: 0.6s;
+}
+.card2 {
+    filter: grayscale(100%);
+    transition: 0.6s;
+}
+.card3:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    transition: 0.6s;
+}
+.card3 {
+    filter: grayscale(100%);
+    transition: 0.6s;
+}
+.card4:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    transition: 0.6s;
+}
+.card4 {
+    filter: grayscale(100%);
+    transition: 0.6s;
+}
+.card5:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    transition: 0.6s;
+}
+.card5 {
+    filter: grayscale(100%);
+    transition: 0.6s;
+}
+.card6:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    transition: 0.6s;
+}
+.card6 {
+    filter: grayscale(100%);
+    transition: 0.6s;
+}
+
+
+.footermain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 140px 100px;
+    grid-template-areas: 
+    "location rrss"
+    "contact contact";
+    background-color: #191919;
+    height: 300px;
+    color: white;
+}
+.contact {
+    grid-area: contact;
+    display: inline-block;
+    margin-top: 30px;
+    /* height: 10px; */
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+.contact p {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.llamado {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.iconofooterllamado {
+    display: flex;
+    align-items: center;
+}
+.correo {
+    justify-content: center;
+    display: flex;
+}
+.iconofootercorreo {
+    display: flex;
+    align-items: center;
+}
+.locationmain {
+    grid-area: location;
+    height: 200px;
+    /* background-color: darkmagenta; */
+    display: inline;
+}
+.locationmain img {
+    height: 100px;
+}
+.locationtittle h4 {
+    padding-left: 5px;
+    text-align: center;
+
+}
+.imgmapa {
+    display: flex;
+    justify-content: center;
+}
+
+.rrss {
+    display: inline;
+    /* align-items: center; */
+    height: 200px;
+    grid-area: rrss;
+    /* background-color: darkred; */
+}
+.rrss p {
+    line-height: 10px;
+}
+.rrss h4 {
+    padding-left: 5px;
+}
+.rrss i {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 5px;
+
+}
+.facebook {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    /* background-color: green; */
+}
+.instagram {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+}
+.tiktok {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+}
+.youtube {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+}
+.sidebar {
+    display: none;
+}
+
+/* Media Query to Desktop */
+
+@media only screen and (min-width:576px){
+    .navcontainer {
+        display: none;
+    }
+    body {
+/*         margin: 0;
+        padding: 0;
+        box-sizing: border-box; */
+        display: grid;
+        grid-template-columns: 350px auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "sidebar main"
+        "footer footer";
+    }
+    .punchline {
+        height: 880px;
+    }
+    .first-text {
+        font-size: 30px;
+    }
+
+    .fx {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .sidebar {
+        width: 350px;
+        height: 880px;
+        display: grid;
+        grid-area: sidebar;
+        background-color: #273043;
+        color: white;
+        /* height: auto; */
+    }
+    .sidebarflex {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        justify-content: center;
+ 
+    }
+    .categories {
+        /* padding-left: 10%; */
+        padding-top: 8%;
+        padding-right: 5%;
+        padding-bottom: 10%;
+
+    }
+    .logomain1 {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        justify-content: center;
+        /* background-color: rgba(255, 255, 255, 0.377); */
+    }
+    .logo1 {
+        display: flex;
+        align-items: center;
+    }
+
+ 
+    .texto1 p {
+        font-size: 25px;
+        height: auto;
+        width: 140px;
+        text-align: center;
+    }
+
+    .texto1 {
+        display: flex;
+        align-items: center;
+    }
+
+    
+
+    .categories h3 {
+        line-height: 50%;
+        color: #3D434C;
+    }
+    .categories-list {
+        display: inline-block;
+        width: 80%;
+        padding-top: 1%;
+        padding-right: 1%;
+        padding-bottom: 5%;
+        line-height: 0px;
+    }
+    
+    .categories-list {
+        padding-left: 5%;
+        margin-right: 5%;
+        height: auto;
+        
+    }
+    .listflex {
+        display: flex;
+        padding-left: 5%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .listflex p{
+        font-size: 25px;
+    
+    }
+    .title-item {
+        color: white;
+    }
+
+    .footermain {
+        grid-area: footer;
+        width: 1963px;
+        overflow-y: none;
+    }
+    main {
+        overflow-x: none;
+        overflow-y: scroll;
+    }
+    .serviciosmain {
+        display: grid;
+        grid-template-columns: 400px auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "filmacion imagen1"
+        "fotografia imagen2"
+        "edicion imagen3";
+        color: white;
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    }
+    .effecto:hover{
+        transform: scaleY(1);
+        filter: blur(0px);
+        transition: 1s;
+    }
+    .effecto {
+        margin-left: -4px;
+        transform: scaleY(1.01);
+        height: 768px;
+        filter: blur(5px);
+        transition: 1s;
+    }
+
+
+
+
+
+    .serviciosmain img {
+        height: 768px;
+        
+    }
+    .imagen1 {
+        
+        grid-area: imagen1;
+    }
+    .imagen2 {
+        grid-area: imagen2;
+    }
+    .imagen3 {
+        grid-area: imagen3;
+    }
+    .filmacion {
+        grid-area: filmacion;
+        /* background-color: cyan; */
+        display: flex;
+        align-content: center;
+        padding-left: 10px;
+        background: rgb(85,35,37);
+        background: linear-gradient(180deg, rgba(85,35,37,1) 0%, rgba(55,30,31,1) 80%);
+        /* box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2); */
+    }
+    .fotografia {
+        grid-area: fotografia;
+        /* background-color: green; */
+        display: flex;
+        align-content: center;
+        padding-left: 10px;
+        background: rgb(55,30,31);
+        background: linear-gradient(180deg, rgba(55,30,31,1) 0%, rgba(21,50,67,1) 80%);
+    }
+    .edicion {
+        grid-area: edicion;
+        /* background-color: yellow; */
+        display: flex;
+        align-content: center;
+        padding-left: 10px;
+        background: rgb(21,50,67);
+        background: linear-gradient(180deg, rgba(21,50,67,1) 0%, rgba(25,25,25,1) 99%);   
+    }
+    .tittleserv {
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        font-size: 70px;
+        padding-left: 30px;
+    }
+    .galeriaproyectos {
+        font-size: 35px;
+    }
+    .tittlebanner {
+        font-size: 30px;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "foto1 foto2 foto3"
+        "foto4 foto5 foto6";
+        background-color: #191919;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        justify-content: center;
+        padding-bottom: 70px;
+    }
+    .galeria img {
+        width: 320px;
+        padding-top: 15px;
+    }
+    .card1 {
+        margin-left: 10px;
+        margin-top: 10px;
+        grid-area: foto1;
+        width: 360px;
+        height: 415px;
+        background-color: #d2dcde;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    }
+    .card2 {
+        margin-left: 10px;
+        margin-top: 10px;
+        grid-area: foto2;
+        width: 360px;
+        height: 415px;
+        background-color: #d2dcde;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    }
+    .card3 {
+        margin-left: 10px;
+        margin-top: 10px;
+        grid-area: foto3;
+        width: 360px;
+        height: 415px;
+        background-color: #d2dcde;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    }
+    .card4 {
+        margin-left: 10px;
+        margin-top: 10px;
+        grid-area: foto4;
+        width: 360px;
+        height: 415px;
+        background-color: #d2dcde;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    }
+    .card5 {
+        margin-left: 10px;
+        margin-top: 10px;
+        grid-area: foto5;
+        width: 360px;
+        height: 415px;
+        background-color: #d2dcde;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    }
+    .card6 {
+        margin-left: 10px;
+        margin-top: 10px;
+        grid-area: foto6;
+        width: 360px;
+        height: 415px;
+        background-color: #d2dcde;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    }
+    .cardimagen {
+        display: flex;
+        /* align-content: center; */
+        justify-content: center;
+    }
+    .cardtexto {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    /* Animaciones Cards Web */
+    .card1:hover {
+        transform: scale(1.2);
+        transition: 0.8s;
+    }
+    .card1 {
+        transform: scale(1);
+        transition: 0.8s;
+    }
+    .card2:hover {
+        transform: scale(1.2);
+        transition: 0.8s;
+    }
+    .card2 {
+        transform: scale(1);
+        transition: 0.8s;
+    }
+    .card3:hover {
+        transform: scale(1.2);
+        transition: 0.8s;
+    }
+    .card3 {
+        transform: scale(1);
+        transition: 0.8s;
+    }
+    .card4:hover {
+        transform: scale(1.2);
+        transition: 0.8s;
+    }
+    .card4 {
+        transform: scale(1);
+        transition: 0.8s;
+    }
+    .card5:hover {
+        transform: scale(1.2);
+        transition: 0.8s;
+    }
+    .card5 {
+        transform: scale(1);
+        transition: 0.8s;
+    }
+    .card6:hover {
+        transform: scale(1.2);
+        transition: 0.8s;
+    }
+    .card6 {
+        transform: scale(1);
+        transition: 0.8s;
+    }
+    .footermain {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 140px;
+        grid-template-areas: 
+        "rrss contact location";
+        background-color: #191919;
+        height: 200px;
+        color: white;
+    }
+    .contact {
+        grid-area: contact;
+        display: inline-block;
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    .contact p {
+        font-size: 18px;
+        margin-left: 10px
+    }
+
+    .llamado {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .iconofooterllamado {
+        display: flex;
+        align-items: center;
+    }
+    .correo {
+        justify-content: center;
+        display: flex;
+    }
+    .iconofootercorreo {
+        display: flex;
+        align-items: center;
+    }
+    .locationmain {
+        grid-area: location;
+        height: 200px;
+        margin-right: 35px;
+        /* background-color: darkmagenta; */
+        display: inline;
+    }
+    .locationmain img {
+        height: 100px;
+    }
+    .locationtittle h4 {
+        padding-left: 5px;
+        text-align: end;
+    
+    }
+    .imgmapa {
+        display: flex;
+        justify-content: end;
+    }
+    
+    .rrssweb {
+        display: inline-block;
+        /* align-items: center; */
+        height: 200px;
+        grid-area: rrss;
+        margin-left: 35px;
+        /* background-color: darkred; */
+    }
+    .rrss p {
+        line-height: 10px;
+    }
+    .rrss h4 {
+        padding-left: 5px;
+    }
+    .rrss i {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+        padding-right: 5px;
+    
+    }
+    .facebook {
+        display: flex;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+        /* background-color: green; */
+    }
+    .instagram {
+        display: flex;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+    }
+    .tiktok {
+        display: flex;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+    }
+    .youtube {
+        display: flex;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+    }
+    
+
+}
